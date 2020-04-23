@@ -1,0 +1,14 @@
+^appveyor\.yml$
+.git/*
+.travis.yml
+README.md
+LICENCE
+^\.travis\.yml$
+paper.md
+paper.bib
+man-roxygen/*
+^codecov\.yml$
+CONTRIBUTING.md
+CODE_OF_CONDUCT.md
+^.*\.Rproj$
+^\.Rproj\.user$

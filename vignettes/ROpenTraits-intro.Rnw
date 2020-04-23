@@ -1,0 +1,46 @@
+% \VignetteIndexEntry{suppdata-intro}
+%\VignettePackage{suppdata}
+%\VignetteEngine{knitr::knitr}
+\documentclass[12pt]{article}
+\usepackage{amssymb,amsmath}
+\usepackage{geometry}
+\geometry{letterpaper}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{natbib}
+\usepackage{color} \definecolor{dark-gray}{gray}{0.3}
+\usepackage[colorlinks=true,urlcolor=dark-gray,breaklinks,citecolor=black,linkcolor=black]{hyperref}
+\bibliographystyle{besjournals}
+\title{Working with The Open Trait Network using \emph{ROpenTraits}}
+\author{The Open Trait Network Team}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+<<include=FALSE>>=
+options(width=40)
+@ 
+\section{Overview}
+\emph{ROpenTraits} is intended to make it easier to work with data released by the Open Trait Network. It can't do a lot right now, frankly, but it can do this:
+
+<<>>=
+library(ROpenTraits)
+datasets <- rotn_datasets()
+@ 
+
+That's it! This file will be less pointless when the package does more things, honest!
+
+
+\begin{thebibliography}{6}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+
+\bibitem[{Someone \emph{et~al.}(2020)Someone \& else}]{example}
+  Someo, NE, \& Els, E (2020) {This would be: how to make a bibliography}. \emph{A journal}
+  issue:pages.
+
+\end{thebibliography}
+
+\end{document}
